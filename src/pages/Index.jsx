@@ -90,7 +90,11 @@ const tasks = [
   },
 ];
 
+import Chatbot from "../components/Chatbot";
+import ApiKeyInput from "../components/ApiKeyInput";
+
 const Index = () => {
+  // ...
   const toast = useToast();
   const [timers, setTimers] = useState(
     tasks.map((session) =>
@@ -159,7 +163,9 @@ const Index = () => {
   };
 
   return (
-    <VStack spacing={8} p={5}>
+    <VStack spacing={8} p={5} align="stretch">
+      <Chatbot />
+      <ApiKeyInput />
       {tasks.map((session, sessionIndex) => (
         <Box key={session.title} w="full">
           <Heading size="md">{session.title}</Heading>
