@@ -18,8 +18,8 @@ const theme = extendTheme({
     initialColorMode: "dark",
   },
   fonts: {
-    heading: "Arial",
-    body: "Arial",
+    heading: "Comic Sans MS, Arial, sans-serif", // Changed from 'Arial' to 'Comic Sans MS' to simulate 'mistral'
+    body: "Georgia, serif", // Changed from 'Arial' to 'Georgia' to simulate 'matisse'
   },
 });
 
