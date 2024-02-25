@@ -193,4 +193,31 @@ const Index = () => {
   );
 };
 
+const additionalResources = [
+  {
+    title: "Continuous Review and Optimization",
+    videos: [
+      {
+        title: "Rasa Algorithm Whiteboard - Rasa NLU in Depth",
+        description: "This video provides an in-depth look at Rasa's NLU and how to continuously improve its performance by updating the training data and refining the model.",
+      },
+    ],
+    links: [
+      {
+        title: "Rasa Masterclass Handbook: Episode 4",
+        description: "This handbook complements the Rasa Masterclass video series and provides insights into training NLU models and optimizing performance.",
+        url: "https://rasa.com/docs/rasa/masterclass-handbook-episode-4",
+      },
+      {
+        title: "Rasa Studio 1.0",
+        description: "This blog post introduces Rasa Studio 1.0 and outlines its capabilities for optimizing conversational AI development.",
+        url: "https://blog.rasa.com/rasa-studio-1-0",
+      },
+    ],
+  },
+  // ... add other sections following the same structure ...
+];
+
+// This entire duplicate block should be removed as it is causing a redeclaration error.
+
 export default Index;
