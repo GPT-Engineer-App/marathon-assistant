@@ -4,7 +4,7 @@ import { FaPlay, FaPause, FaRedo } from "react-icons/fa";
 
 const tasks = [
   {
-    title: "Pre-Sprint Preparation (Day 0)",
+    title: "Preparation (Day 0)",
     subtasks: [
       {
         name: "Setup and Planning",
@@ -24,7 +24,7 @@ const tasks = [
     ],
   },
   {
-    title: "Sprint Session 1: Foundation and Initial Development (Day 1)",
+    title: "Session 1: Foundation and Initial Development (Day 1)",
     subtasks: [
       {
         name: "NLU Training Data Creation",
@@ -44,7 +44,7 @@ const tasks = [
     ],
   },
   {
-    title: "Sprint Session 2: Advanced Features and Integration (Day 2)",
+    title: "Session 2: Advanced Features and Integration (Day 2)",
     subtasks: [
       {
         name: "Advanced Custom Actions",
@@ -59,7 +59,7 @@ const tasks = [
     ],
   },
   {
-    title: "Sprint Session 3: Deployment and Final Testing (Day 3)",
+    title: "Session 3: Deployment and Final Testing (Day 3)",
     subtasks: [
       {
         name: "Deployment and Testing",
@@ -74,7 +74,7 @@ const tasks = [
     ],
   },
   {
-    title: "Post-Sprint Refinement (Day 4)",
+    title: "Post-Refinement (Day 4)",
     subtasks: [
       {
         name: "Feedback Loop Setup",
