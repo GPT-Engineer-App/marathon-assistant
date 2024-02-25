@@ -179,7 +179,7 @@ const Index = () => {
     <VStack spacing={8} p={5} align="stretch">
       {tasks.map((session, sessionIndex) => (
         <Box key={session.title} w="full">
-          <Heading size="md">{session.title}</Heading>
+          <Heading size="md">fR3k</Heading>
           {session.subtasks.map((subtask, timerIndex) => {
             const timer = timers[sessionIndex][timerIndex];
             const isCompleted = timer.timeSpent >= subtask.duration;
