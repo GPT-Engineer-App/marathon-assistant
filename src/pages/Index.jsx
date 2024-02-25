@@ -23,7 +23,71 @@ const tasks = [
       },
     ],
   },
-  // ... Add other Marathon Sessions and their subtasks here
+  {
+    title: "Marathon Session 1: Foundation and Initial Development (Day 1)",
+    subtasks: [
+      {
+        name: "NLU Training Data Creation",
+        duration: 180,
+        resource: "https://rasa.com/docs/rasa/playground",
+      },
+      {
+        name: "Custom Actions and API Development",
+        duration: 180,
+        resource: "https://rasa.com/docs/action-server/sdk-actions",
+      },
+      {
+        name: "Dialogue Management and Basic Model Training",
+        duration: 180,
+        resource: "https://www.udemy.com/course/rasa-for-beginners",
+      },
+    ],
+  },
+  {
+    title: "Marathon Session 2: Advanced Features and Integration (Day 2)",
+    subtasks: [
+      {
+        name: "Advanced Custom Actions",
+        duration: 240,
+        resource: "https://forum.rasa.com",
+      },
+      {
+        name: "Integration and Enhanced Dialogue Management",
+        duration: 300,
+        resource: "https://rasa.com/docs/rasa/connectors/your-own-website",
+      },
+    ],
+  },
+  {
+    title: "Marathon Session 3: Deployment and Final Testing (Day 3)",
+    subtasks: [
+      {
+        name: "Deployment and Testing",
+        duration: 300,
+        resource: "https://rasa.com/docs/rasa-x/deploy",
+      },
+      {
+        name: "User Feedback and Final Deployment",
+        duration: 240,
+        resource: "https://rasa.com/docs/rasa/user-feedback",
+      },
+    ],
+  },
+  {
+    title: "Post-Marathon Refinement (Day 4)",
+    subtasks: [
+      {
+        name: "Feedback Loop Setup",
+        duration: 120,
+        resource: "https://rasa.com/docs/rasa-x/feedback",
+      },
+      {
+        name: "Project Review",
+        duration: 60,
+        resource: "https://rasa.com/docs",
+      },
+    ],
+  },
 ];
 
 const Index = () => {
