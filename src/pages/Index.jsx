@@ -93,7 +93,23 @@ const tasks = [
 import Chatbot from "../components/Chatbot";
 import ApiKeyInput from "../components/ApiKeyInput";
 
+// Simulated fetch function
+const fetchResources = (apiKey) => {
+  // Here you would fetch the resources from an API using the apiKey
+  // For demonstration, we'll simulate the API response
+  return [
+    // ... populate with simulated resources ...
+  ];
+};
+
 const Index = () => {
+  const [resources, setResources] = useState([]); // State to hold fetched resources
+
+  // Function to update resources when API key is submitted
+  const handleApiKeySubmit = (apiKey) => {
+    const fetchedResources = fetchResources(apiKey);
+    setResources(fetchedResources);
+  };
   // ...
   const toast = useToast();
   const [timers, setTimers] = useState(
@@ -165,7 +181,14 @@ const Index = () => {
   return (
     <VStack spacing={8} p={5} align="stretch">
       <Chatbot />
-      <ApiKeyInput />
+      <ApiKeyInput onApiKeySubmit={handleApiKeySubmit} />
+      {/* Display resources here */}
+      {resources.map((resource, index) => (
+        <Box key={index} p={5} borderWidth="1px" borderRadius="lg">
+          <Heading size="sm">{resource.title}</Heading>
+          {/* ... other resource information rendering ... */}
+        </Box>
+      ))}
       {tasks.map((session, sessionIndex) => (
         <Box key={session.title} w="full">
           <Heading size="md">{session.title}</Heading>
