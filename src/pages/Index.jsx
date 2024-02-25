@@ -90,9 +90,6 @@ const tasks = [
   },
 ];
 
-import Chatbot from "../components/Chatbot";
-import ApiKeyInput from "../components/ApiKeyInput";
-
 // Simulated fetch function
 const fetchResources = (apiKey) => {
   // Here you would fetch the resources from an API using the apiKey
@@ -180,15 +177,6 @@ const Index = () => {
 
   return (
     <VStack spacing={8} p={5} align="stretch">
-      <Chatbot />
-      <ApiKeyInput onApiKeySubmit={handleApiKeySubmit} />
-      {/* Display resources here */}
-      {resources.map((resource, index) => (
-        <Box key={index} p={5} borderWidth="1px" borderRadius="lg">
-          <Heading size="sm">{resource.title}</Heading>
-          {/* ... other resource information rendering ... */}
-        </Box>
-      ))}
       {tasks.map((session, sessionIndex) => (
         <Box key={session.title} w="full">
           <Heading size="md">{session.title}</Heading>
@@ -201,9 +189,7 @@ const Index = () => {
               <Box key={subtask.name} p={5} borderWidth="1px" borderRadius="lg">
                 <Heading size="sm">{subtask.name}</Heading>
                 <Text mb={2}>Duration: {subtask.duration} minutes</Text>
-                <Link href={subtask.resource} isExternal>
-                  Resource Link
-                </Link>
+
                 <Progress mt={2} value={percentage} />
                 <Box mt={2}>
                   <Button leftIcon={<FaPlay />} onClick={() => handleTimerControl(sessionIndex, timerIndex, "start")} isDisabled={timer.isActive || isCompleted} mr={2}>
